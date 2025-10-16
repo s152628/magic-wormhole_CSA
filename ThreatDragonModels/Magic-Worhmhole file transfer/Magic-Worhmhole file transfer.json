@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9922fbc1-76b4-43c6-ae5b-314025acd04d",
             "zIndex": -1,
+            "id": "9922fbc1-76b4-43c6-ae5b-314025acd04d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Sender Device",
@@ -59,8 +59,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "4051c0b1-0e39-47d4-b30c-54b3b1c97e53",
             "zIndex": -1,
+            "id": "4051c0b1-0e39-47d4-b30c-54b3b1c97e53",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Receiver Device",
@@ -85,8 +85,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "3b488511-7e28-44aa-82d7-e754f89a4d8e",
             "zIndex": -1,
+            "id": "3b488511-7e28-44aa-82d7-e754f89a4d8e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Cloud provider security perimeter",
@@ -111,8 +111,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b251d9b2-e613-4e59-a205-b17b2e34483a",
             "zIndex": -1,
+            "id": "b251d9b2-e613-4e59-a205-b17b2e34483a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Untrusted Internet",
@@ -142,6 +142,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -225,7 +226,6 @@
               ]
             },
             "id": "df4ae268-ed8e-43ec-baa9-d2c104e5db96",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Sender Laptop",
@@ -259,6 +259,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -342,7 +343,6 @@
               ]
             },
             "id": "6973cf65-1b0e-41f3-9850-793176fe16d6",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Receiver Laptop",
@@ -376,6 +376,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -459,7 +460,6 @@
               ]
             },
             "id": "8aac2725-4ea5-46d2-ae25-7901fc68d9fb",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "MITM",
@@ -493,6 +493,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -576,7 +577,6 @@
               ]
             },
             "id": "128accd1-0ce6-4305-9aee-d870f17856c3",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Upload",
@@ -613,6 +613,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -696,7 +697,6 @@
               ]
             },
             "id": "3c3cbba2-484b-422f-80b2-364412108c17",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Download",
@@ -736,6 +736,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -819,7 +820,6 @@
               ]
             },
             "id": "4d11705e-754a-4ee1-a58c-697f3741fd6c",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Cloud metadata DB",
@@ -860,6 +860,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -943,7 +944,6 @@
               ]
             },
             "id": "65487b68-0c52-4c14-aa60-ff071025974d",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Cloud object store",
