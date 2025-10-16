@@ -16,11 +16,1428 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.5.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": -488.75000000000017,
+              "y": 200.0000000000001
+            },
+            "size": {
+              "width": 190,
+              "height": 320
+            },
+            "attrs": {
+              "label": {
+                "text": "Sender Device"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9922fbc1-76b4-43c6-ae5b-314025acd04d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Sender Device",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -488.75,
+              "y": 540
+            },
+            "size": {
+              "width": 190,
+              "height": 350
+            },
+            "attrs": {
+              "label": {
+                "text": "Receiver Device"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "4051c0b1-0e39-47d4-b30c-54b3b1c97e53",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Receiver Device",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 59.99999999999966,
+              "y": 330.00000000000034
+            },
+            "size": {
+              "width": 260,
+              "height": 260
+            },
+            "attrs": {
+              "label": {
+                "text": "Cloud provider security perimeter"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "3b488511-7e28-44aa-82d7-e754f89a4d8e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Cloud provider security perimeter",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -193.75,
+              "y": 670
+            },
+            "size": {
+              "width": 180,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": "Untrusted Internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "b251d9b2-e613-4e59-a205-b17b2e34483a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Untrusted Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -450,
+              "y": 250
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Sender Laptop"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e394890a-4124-40ce-99c8-3b97c94ae0d9"
+                },
+                {
+                  "group": "right",
+                  "id": "9aa2af97-d73c-4a9f-96ff-76276653541c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "45aab20d-7bd5-4d14-9a09-246c26f55781"
+                },
+                {
+                  "group": "left",
+                  "id": "7363f702-3cfd-4373-9228-38a0e0bf0199"
+                }
+              ]
+            },
+            "id": "df4ae268-ed8e-43ec-baa9-d2c104e5db96",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Sender Laptop",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -450,
+              "y": 770
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Receiver Laptop"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e394890a-4124-40ce-99c8-3b97c94ae0d9"
+                },
+                {
+                  "group": "right",
+                  "id": "9aa2af97-d73c-4a9f-96ff-76276653541c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "45aab20d-7bd5-4d14-9a09-246c26f55781"
+                },
+                {
+                  "group": "left",
+                  "id": "7363f702-3cfd-4373-9228-38a0e0bf0199"
+                }
+              ]
+            },
+            "id": "6973cf65-1b0e-41f3-9850-793176fe16d6",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Receiver Laptop",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -160,
+              "y": 735
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "MITM"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e394890a-4124-40ce-99c8-3b97c94ae0d9"
+                },
+                {
+                  "group": "right",
+                  "id": "9aa2af97-d73c-4a9f-96ff-76276653541c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "45aab20d-7bd5-4d14-9a09-246c26f55781"
+                },
+                {
+                  "group": "left",
+                  "id": "7363f702-3cfd-4373-9228-38a0e0bf0199"
+                }
+              ]
+            },
+            "id": "8aac2725-4ea5-46d2-ae25-7901fc68d9fb",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "MITM",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -448.75,
+              "y": 390
+            },
+            "size": {
+              "width": 110,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Upload"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9902f5fd-4977-4ffe-8611-cd80d3864da4"
+                },
+                {
+                  "group": "right",
+                  "id": "28ae92e1-59d4-48c5-85e4-14a590194ef5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b0c9e49c-19be-4401-99e7-27cd58253004"
+                },
+                {
+                  "group": "left",
+                  "id": "332cda49-c532-4b78-b529-1d20b21b3749"
+                }
+              ]
+            },
+            "id": "128accd1-0ce6-4305-9aee-d870f17856c3",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Upload",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -450,
+              "y": 590.0000000000003
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Download"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9902f5fd-4977-4ffe-8611-cd80d3864da4"
+                },
+                {
+                  "group": "right",
+                  "id": "28ae92e1-59d4-48c5-85e4-14a590194ef5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b0c9e49c-19be-4401-99e7-27cd58253004"
+                },
+                {
+                  "group": "left",
+                  "id": "332cda49-c532-4b78-b529-1d20b21b3749"
+                }
+              ]
+            },
+            "id": "3c3cbba2-484b-422f-80b2-364412108c17",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Download",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 129.99999999999966,
+              "y": 500
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cloud metadata DB"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e8fdb5a2-57b0-4729-b4b5-b15037a7e8a7"
+                },
+                {
+                  "group": "right",
+                  "id": "7dd24ee2-dae0-45e6-ab72-8abdbab1dfa3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0becb589-8dd6-4b25-a6d9-0389035af38c"
+                },
+                {
+                  "group": "left",
+                  "id": "3a85edcf-2e24-4080-833f-249831495cbd"
+                }
+              ]
+            },
+            "id": "4d11705e-754a-4ee1-a58c-697f3741fd6c",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Cloud metadata DB",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 129.99999999999966,
+              "y": 395
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cloud object store"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e8fdb5a2-57b0-4729-b4b5-b15037a7e8a7"
+                },
+                {
+                  "group": "right",
+                  "id": "7dd24ee2-dae0-45e6-ab72-8abdbab1dfa3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0becb589-8dd6-4b25-a6d9-0389035af38c"
+                },
+                {
+                  "group": "left",
+                  "id": "3a85edcf-2e24-4080-833f-249831495cbd"
+                }
+              ]
+            },
+            "id": "65487b68-0c52-4c14-aa60-ff071025974d",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Store",
+              "name": "Cloud object store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "file plaintext",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "53781f07-be7a-4b05-909a-4eab0791c3ee",
+                  "title": "Account suspended / link revoked",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Cloud vendor flags file as abuse; receiver cannot fetch.",
+                  "mitigation": "Running your own lightweight relay on any cheap VPS means you set the availability policy and are immune to arbitrary account suspensions; if the corporate firewall blocks the relay you can still fall back to the built-in LAN hole-punch or run the relay behind an SSH reverse tunnel, keeping the transfer under your control.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
+            },
+            "labels": [
+              "file plaintext"
+            ],
+            "id": "9c5ac8f1-d8d6-48fa-ac6a-fb4ac9c317d4",
+            "source": {
+              "x": -394,
+              "y": 310
+            },
+            "target": {
+              "cell": "128accd1-0ce6-4305-9aee-d870f17856c3",
+              "port": "9902f5fd-4977-4ffe-8611-cd80d3864da4"
+            },
+            "vertices": [
+              {
+                "x": -360,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS upload",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "20d061e3-f518-4698-8519-40f45f4515e3",
+                  "title": "TLS-stripping or weak cipher",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attacker forces connection down to HTTP or weak TLS.",
+                  "mitigation": "Because magic-wormhole speaks only wss:// (TLS 1.3) and the client aborts if the relay’s certificate is invalid or the cipher suite is downgraded, an active network attacker can no longer strip TLS or force weak crypto; if you want belt-and-braces you can pin your own CA with --ca-cert or tunnel the whole session over Tor, eliminating any possibility of TLS tampering.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "533540cb-4537-4b29-b4b6-8928148174e8",
+                  "title": "Cloud admin reads file",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Operator staff (or compelled attacker) has physical access.",
+                  "mitigation": "Wormhole provides end-to -end XSalsa20-Poly1305 file is encrypted before it leaves the sender; relay & transit servers only see random bits. + Ephemeral mailbox: row deleted immediately after delivery or 30 min timeout - No ciphertext left on disk",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "0bdf1342-fc17-4066-91e7-e8c28b33d167",
+                  "title": "Attacker creates look-alike share URL",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Phishing e-mail with fake “Open in Drive” button.",
+                  "mitigation": "There is no web URL to fake and the client pins the relay’s TLS certificate; for extra assurance you can use wormhole send --verify to read a 64-bit hexadecimal fingerprint of the session key and confirm it out-of-band (phone, Signal, PGP), reducing phishing to a negligible risk.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPS upload"
+            ],
+            "id": "9a57fd85-d0cc-446e-9efb-b1ec612904d4",
+            "source": {
+              "x": -330,
+              "y": 280
+            },
+            "target": {
+              "cell": "65487b68-0c52-4c14-aa60-ff071025974d",
+              "port": "3a85edcf-2e24-4080-833f-249831495cbd"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Share-Link",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "76af092d-12cf-46d4-a0da-2981983d4677",
+                  "title": "Link leaked via e-mail/IM history",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Anyone with the link can download; search engines index.",
+                  "mitigation": "Wormhole provides one-time 56-bit wormhole code . Mailbox also vanishes after first successful PAKE - link is not reusable and never indexed by search engines. No permanent URL at all and URL doesn´t reveal anything about content.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Share-Link"
+            ],
+            "id": "93c83e91-e4f8-4c5f-8e23-43f0395f475c",
+            "source": {
+              "x": -450,
+              "y": 280
+            },
+            "target": {
+              "cell": "6973cf65-1b0e-41f3-9850-793176fe16d6",
+              "port": "7363f702-3cfd-4373-9228-38a0e0bf0199"
+            },
+            "vertices": [
+              {
+                "x": -580,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Metadata request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Metadata request"
+            ],
+            "id": "0721d88d-b247-43e7-9a0f-c051f759a0eb",
+            "source": {
+              "x": -320,
+              "y": 650
+            },
+            "target": {
+              "cell": "4d11705e-754a-4ee1-a58c-697f3741fd6c",
+              "port": "3a85edcf-2e24-4080-833f-249831495cbd"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Malicious traffic",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Malicious traffic"
+            ],
+            "id": "1d4626bc-118a-4bf4-bbbb-9baa256c00ac",
+            "source": {
+              "x": -40,
+              "y": 760
+            },
+            "target": {
+              "cell": "4d11705e-754a-4ee1-a58c-697f3741fd6c",
+              "port": "0becb589-8dd6-4b25-a6d9-0389035af38c"
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": 660
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS download",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "90788e00-aaa2-483c-b563-3f43ba510803",
+                  "title": "Cloud admin reads file",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Operator staff (or compelled attacker) has physical access.",
+                  "mitigation": "Wormhole provides end-to -end XSalsa20-Poly1305 file is encrypted before it leaves the sender; relay & transit servers only see random bits. + Ephemeral mailbox: row deleted immediately after delivery or 30 min timeout - No ciphertext left on disk",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "17dd9686-acb6-4b18-8fd3-68400f3718d4",
+                  "title": "File silently replaced on server",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Compelled cloud provider or hacker swaps file for trojanised version.",
+                  "mitigation": "With magic Wormhoe, every 4 kB chunk carries a Poly1305 MAC and the receiver verifies a final Blake2b root hash delivered through the encrypted control channel, so if the relay (or anyone else) swaps, re-orders or flips even a single bit the MAC check fails and the client aborts with a clear decryption-error message, making silent file substitution impossible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "8c17e9f6-5a6d-4f92-892e-f6c60db3add1",
+                  "title": "Sender denies sending exact file",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "o cryptographic signature → non-repudiation impossible.\n",
+                  "mitigation": "Wormhole does not add long-term signatures, but you can achieve non-repudiation by signing the file with PGP before invoking wormhole send; both sides also see the same Blake2b hash of the ciphertext inside the authenticated channel, so either party can log that hash as cryptographic proof of exactly what blob was transferred.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 3,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTPS download"
+            ],
+            "id": "3bcacb1a-df56-4c6e-8c99-749bf7eb2d72",
+            "source": {
+              "cell": "65487b68-0c52-4c14-aa60-ff071025974d",
+              "port": "3a85edcf-2e24-4080-833f-249831495cbd"
+            },
+            "target": {
+              "cell": "3c3cbba2-484b-422f-80b2-364412108c17",
+              "port": "28ae92e1-59d4-48c5-85e4-14a590194ef5"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Malicious traffic",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Malicious traffic"
+            ],
+            "id": "c8ff97b2-c187-425f-a086-da0628c9a116",
+            "source": {
+              "x": -40,
+              "y": 760
+            },
+            "target": {
+              "cell": "65487b68-0c52-4c14-aa60-ff071025974d",
+              "port": "0becb589-8dd6-4b25-a6d9-0389035af38c"
+            },
+            "vertices": [
+              {
+                "x": 130,
+                "y": 870
+              }
+            ]
+          }
+        ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "Miro",
-    "threatTop": 0
+    "threatTop": 11
   }
 }
